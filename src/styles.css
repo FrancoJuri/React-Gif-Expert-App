@@ -213,15 +213,21 @@ h2 {
     transition: all 200ms;
 }
 
+.history-item-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .history-item:hover{
     background-color: #ccc;
 }
 
-.history-item span{
+.history-item .material-symbols-outlined{
     transition: all 250ms;
 }
 
-.history-item span:hover{
+.history-item .material-symbols-outlined:hover{
     transform: scale(1.2, 1.2);
 }
 

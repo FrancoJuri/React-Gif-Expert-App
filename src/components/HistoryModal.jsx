@@ -24,7 +24,7 @@ const HistoryModal = ({ history, onChangeSearch, onDeleteHistoryItem, onDeleteAl
                                         onChangeSearch(item);
                                         setIsModalActive(false);
                                     }}>
-                                        {item}
+                                        <span className='history-item-text'>{item}</span>
                                         <span className='material-symbols-outlined pointer' onClick={(e) => {
                                             e.stopPropagation();
                                             onDeleteHistoryItem(item);
