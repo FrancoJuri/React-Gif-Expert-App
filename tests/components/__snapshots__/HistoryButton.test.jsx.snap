@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryButton testing Should match snapshot 1`] = `
+<div>
+  <button
+    aria-label="historyButton"
+    class="history-button pointer"
+  >
+    <span
+      class="material-symbols-outlined"
+    >
+      history
+    </span>
+    <span
+      class="history-button-text"
+    >
+      History
+    </span>
+  </button>
+</div>
+`;

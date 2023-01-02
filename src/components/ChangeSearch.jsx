@@ -23,7 +23,7 @@ const ChangeSearch = ({ onChangeSearch }) => {
     }
 
     return (
-        <form className='search-form' onSubmit={onSubmit}>
+        <form className='search-form' onSubmit={onSubmit} aria-label='form'>
             <input 
                 type='text' 
                 placeholder='Search for Gifs'  

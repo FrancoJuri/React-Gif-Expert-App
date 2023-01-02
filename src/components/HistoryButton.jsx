@@ -38,7 +38,7 @@ const HistoryButton = ({ setIsModalActive }) => {
   if(isFooterVisible){
     component = null;
   } else{
-    component = <button className='history-button pointer' onClick={() => {
+    component = <button aria-label='historyButton' className='history-button pointer' onClick={() => {
       setIsModalActive(true);
     }}>
         <span className='material-symbols-outlined'>history</span>

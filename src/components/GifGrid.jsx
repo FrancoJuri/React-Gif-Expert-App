@@ -17,7 +17,7 @@ const GifGrid = ({ search }) => {
     return (
         <>
             
-            <h2 className='search-title text-center'>{search}</h2>
+            <h2 className='search-title text-center' data-testid='searchTitle'>{search}</h2>
 
             {
                 isLoading && <h2 className='text-center'>Loading...</h2>

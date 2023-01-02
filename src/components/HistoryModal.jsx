@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const HistoryModal = ({ history, onChangeSearch, onDeleteHistoryItem, onDeleteAllHistory, setIsModalActive }) => {
     return (
-        <div className='modal'>
+        <div className='modal' data-testid='modal'>
             <div className='modal-container'>
 
                 <div className="modal-header">
@@ -16,18 +16,21 @@ const HistoryModal = ({ history, onChangeSearch, onDeleteHistoryItem, onDeleteAl
 
                 <div className='modal-body'>
                     <ul className='history-list styled-scrollbar'>
-                        <div>
+                        <div data-testid='historyItemsContainer'>
                             {
                                 history.map(item => (
-                                    <li className='history-item pointer' key={item} onClick={(e) => {
+                                    <li aria-label='historyItem' className='history-item pointer' key={item} onClick={(e) => {
                                         e.stopPropagation();
                                         onChangeSearch(item);
                                         setIsModalActive(false);
                                     }}>
                                         <span className='history-item-text'>{item}</span>
-                                        <span className='material-symbols-outlined pointer' onClick={(e) => {
-                                            e.stopPropagation();
-                                            onDeleteHistoryItem(item);
+                                        <span 
+                                            aria-label='deleteItem' 
+                                            className='material-symbols-outlined pointer' 
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                onDeleteHistoryItem(item);
                                         }}>
                                             delete
                                         </span>
@@ -55,7 +58,7 @@ const HistoryModal = ({ history, onChangeSearch, onDeleteHistoryItem, onDeleteAl
                 <hr />
 
                 <div className="modal-footer">
-                    <button className='modal-close pointer' onClick={() => {
+                    <button aria-label='closeButton' className='modal-close pointer' onClick={() => {
                         setIsModalActive(false);
                     }}>Close</button>
                 </div>

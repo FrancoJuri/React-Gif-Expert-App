@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer testing Should match snapshot 1`] = `
+<div>
+  <footer>
+    <h3
+      class="text-center"
+    >
+      Made with ❤ by Franco Juri
+    </h3>
+  </footer>
+</div>
+`;

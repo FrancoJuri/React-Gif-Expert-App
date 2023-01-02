@@ -17,7 +17,7 @@ const Pagination = ({ onPreviousPage, onNextPage, page, pagination }) => {
             {
                 (page !== 0)
                 &&
-                <button className='pointer' onClick={onPreviousPage}>
+                <button className='pointer' onClick={onPreviousPage} aria-label='previousButton'>
                     <span className='icon material-symbols-outlined'>
                         navigate_before
                     </span>
@@ -29,7 +29,7 @@ const Pagination = ({ onPreviousPage, onNextPage, page, pagination }) => {
             {
                 (page !== totalPages)
                 &&
-                <button className='pointer' onClick={onNextPage}>
+                <button className='pointer' onClick={onNextPage} aria-label='nextButton'>
                     <span className='icon material-symbols-outlined'>
                         navigate_next
                     </span>

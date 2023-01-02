@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifItem testing Should match snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <a
+      href="https://valorant.com/img.jpg"
+      target="_blank"
+    >
+      <img
+        alt="Valorant"
+        src="https://valorant.com/img.jpg"
+      />
+    </a>
+    <p>
+      Valorant
+    </p>
+  </div>
+</div>
+`;
